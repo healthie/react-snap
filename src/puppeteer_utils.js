@@ -229,9 +229,6 @@ const crawl = async opt => {
           page,
           options,
           route,
-          onError: () => {
-            shuttingDown = true;
-          },
           sourcemapStore
         });
         beforeFetch && beforeFetch({ page, route });
